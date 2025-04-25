@@ -1,0 +1,17 @@
+#arithmetic operations
+
+a=10
+b=20
+
+echo sum is: `expr $a + $b`
+
+echo difference is: `expr $a - $b`
+
+echo product is: `expr $a \* $b`
+
+
+echo division is: `expr $a / $b`
+
+
+
+echo modulo is : `expr $a % $b`

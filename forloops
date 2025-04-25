@@ -1,0 +1,6 @@
+fruits="apple banana mango"
+
+for val in $fruits
+do
+echo $val
+done

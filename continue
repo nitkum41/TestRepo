@@ -1,0 +1,16 @@
+#break statement
+
+a=0
+
+while [ $a -lt 10 ]
+do
+r=`expr $a % 2`
+if [ $r -eq 0 ]
+then
+echo number is even
+a=`expr $a + 1`
+continue
+fi
+echo number is odd
+a=`expr $a + 1`
+done

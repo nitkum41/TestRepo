@@ -1,0 +1,10 @@
+#print numbers using for loop
+
+for num in 2 4 6 8 10
+do
+r=`expr $num % 2`
+if [ $r -eq 0 ] 
+then 
+echo $num
+fi
+done

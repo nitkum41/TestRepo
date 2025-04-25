@@ -1,0 +1,12 @@
+#check file is a directory or not
+
+echo enter file name
+
+read file
+
+if test -d $file
+then
+echo it is a directory
+else
+echo it is not a directory
+fi

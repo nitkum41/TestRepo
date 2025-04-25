@@ -1,0 +1,33 @@
+#calculator ops for input numbers
+
+echo input two numbers
+
+read a b
+
+echo choose options
+echo 1.Addition 
+echo 2.Subtraction 
+echo 3.Multiplication 
+echo 4.Division 
+echo 5.modulo
+read ch
+
+case $ch in
+1)
+echo sum of numbers:`expr $a + $b`
+;;
+2)
+echo difference of numbers: `expr $a - $b`
+;;
+3)
+echo product is: `expr $a \* $b`
+;;
+4)
+echo division is: `expr $a / $b`
+;;
+5)
+echo modulo is : `expr $a % $b`
+;;
+*)
+echo invalid choice
+esac

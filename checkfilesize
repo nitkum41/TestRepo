@@ -1,0 +1,30 @@
+#check fileis empty or not
+
+echo enter a file name
+
+read file
+
+if test -s $file
+then 
+echo file is not empty
+if test -r $file
+then
+echo file is readable
+else
+echo file is not readable
+fi
+if test -w $file
+then
+echo file is writable
+else
+echo file is not writable
+fi
+if test -x $file
+then
+echo file is executable
+else
+echo file is not executable
+fi
+else
+echo file is empty
+fi
